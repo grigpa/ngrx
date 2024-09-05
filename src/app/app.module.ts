@@ -5,11 +5,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { StoreModule } from "@ngrx/store";
 import { counterReducer } from "./counter.reducer";
-import { CounterComponent } from "./counter/counter.component";
+import { BooksComponent } from './books/books.component';
 
 @NgModule({
   declarations: [
-    AppComponent, CounterComponent
+    AppComponent, BooksComponent
   ],
   imports: [
     BrowserModule,
