@@ -18,8 +18,5 @@ export const booksReducer = createReducer(
   initialState,
   on(getBooks, (state) => ({ ...state })),
   on(deleteBooks, (state) => ({ ...state, books: [] })),
-  on(addBook, (state) => {
-    state.books.push(state.books[0]);
-    return state;
-  }),
+  on(addBook, (state) => ({...state, books: [] })),
 );
